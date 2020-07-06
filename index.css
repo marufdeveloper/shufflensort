@@ -1,0 +1,115 @@
+body {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+div.footer {
+  display: flex;
+  font-size: small;
+  justify-content: center;
+  margin-top: 0.4rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px) {
+  .puzzel-box {
+    display: flex;
+    font-size: 5em;
+  }
+  .puzzel-action {
+    width: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .puzzel-action button {
+    background-color: #2b8ead;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px;
+  }
+
+  .flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80vh;
+  }
+  .flex-box .item {
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  /*#333333; 5,3,9; #efefef; 6, 7*/
+  .first-color {
+    background-color: #6f98a8;
+  }
+  .second-color {
+    background-color: #72c3dc;
+  }
+  .thrid-color {
+    background-color: #333333;
+  }
+  .forth-color {
+    background-color: #bfbfbf;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .puzzel-box {
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+  .flex-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .flex-box .item {
+    padding: 0.5rem;
+    margin: 0.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    border-left-width: 0.5rem;
+    border-left-style: solid;
+  }
+  .puzzel-action {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .puzzel-action button {
+    background-color: #2b8ead;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  /*#333333; 5,3,9; #efefef; 6, 7*/
+  .first-color {
+    border-left-color: #6f98a8;
+  }
+  .second-color {
+    border-left-color: #72c3dc;
+  }
+  .thrid-color {
+    border-left-color: #333333;
+  }
+  .forth-color {
+    border-left-color: #bfbfbf;
+  }
+}
